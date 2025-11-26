@@ -1,0 +1,3248 @@
+using System.Collections.Generic;
+
+namespace CompanyFinder.Models
+{
+    public class StateIndustryStructure
+    {
+        public string StateName { get; set; } = string.Empty;
+        public List<Industry> Industries { get; set; } = new();
+    }
+
+    public class Industry
+    {
+        public string IndustryName { get; set; } = string.Empty;
+        public List<string> SubIndustries { get; set; } = new();
+    }
+
+    public static class IndustryData
+    {
+        public static Dictionary<string, StateIndustryStructure> States { get; } = new()
+        {
+            ["Alabama"] = new StateIndustryStructure
+            {
+                StateName = "Alabama",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Alaska"] = new StateIndustryStructure
+            {
+                StateName = "Alaska",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Arizona"] = new StateIndustryStructure
+            {
+                StateName = "Arizona",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Arkansas"] = new StateIndustryStructure
+            {
+                StateName = "Arkansas",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["California"] = new StateIndustryStructure
+            {
+                StateName = "California",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Colorado"] = new StateIndustryStructure
+            {
+                StateName = "Colorado",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Connecticut"] = new StateIndustryStructure
+            {
+                StateName = "Connecticut",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Delaware"] = new StateIndustryStructure
+            {
+                StateName = "Delaware",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Florida"] = new StateIndustryStructure
+            {
+                StateName = "Florida",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Georgia"] = new StateIndustryStructure
+            {
+                StateName = "Georgia",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Hawaii"] = new StateIndustryStructure
+            {
+                StateName = "Hawaii",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Idaho"] = new StateIndustryStructure
+            {
+                StateName = "Idaho",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Illinois"] = new StateIndustryStructure
+            {
+                StateName = "Illinois",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Indiana"] = new StateIndustryStructure
+            {
+                StateName = "Indiana",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Iowa"] = new StateIndustryStructure
+            {
+                StateName = "Iowa",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Kansas"] = new StateIndustryStructure
+            {
+                StateName = "Kansas",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Kentucky"] = new StateIndustryStructure
+            {
+                StateName = "Kentucky",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Louisiana"] = new StateIndustryStructure
+            {
+                StateName = "Louisiana",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Maine"] = new StateIndustryStructure
+            {
+                StateName = "Maine",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Maryland"] = new StateIndustryStructure
+            {
+                StateName = "Maryland",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Massachusetts"] = new StateIndustryStructure
+            {
+                StateName = "Massachusetts",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Michigan"] = new StateIndustryStructure
+            {
+                StateName = "Michigan",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Minnesota"] = new StateIndustryStructure
+            {
+                StateName = "Minnesota",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Mississippi"] = new StateIndustryStructure
+            {
+                StateName = "Mississippi",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Missouri"] = new StateIndustryStructure
+            {
+                StateName = "Missouri",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Montana"] = new StateIndustryStructure
+            {
+                StateName = "Montana",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Nebraska"] = new StateIndustryStructure
+            {
+                StateName = "Nebraska",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Nevada"] = new StateIndustryStructure
+            {
+                StateName = "Nevada",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["NewHampshire"] = new StateIndustryStructure
+            {
+                StateName = "New Hampshire",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["NewJersey"] = new StateIndustryStructure
+            {
+                StateName = "New Jersey",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["NewMexico"] = new StateIndustryStructure
+            {
+                StateName = "New Mexico",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["NewYork"] = new StateIndustryStructure
+            {
+                StateName = "New York",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["NorthCarolina"] = new StateIndustryStructure
+            {
+                StateName = "North Carolina",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["NorthDakota"] = new StateIndustryStructure
+            {
+                StateName = "North Dakota",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Ohio"] = new StateIndustryStructure
+            {
+                StateName = "Ohio",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Oklahoma"] = new StateIndustryStructure
+            {
+                StateName = "Oklahoma",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Oregon"] = new StateIndustryStructure
+            {
+                StateName = "Oregon",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Pennsylvania"] = new StateIndustryStructure
+            {
+                StateName = "Pennsylvania",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["RhodeIsland"] = new StateIndustryStructure
+            {
+                StateName = "Rhode Island",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["SouthCarolina"] = new StateIndustryStructure
+            {
+                StateName = "South Carolina",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["SouthDakota"] = new StateIndustryStructure
+            {
+                StateName = "South Dakota",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Tennessee"] = new StateIndustryStructure
+            {
+                StateName = "Tennessee",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Texas"] = new StateIndustryStructure
+            {
+                StateName = "Texas",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Utah"] = new StateIndustryStructure
+            {
+                StateName = "Utah",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Vermont"] = new StateIndustryStructure
+            {
+                StateName = "Vermont",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Virginia"] = new StateIndustryStructure
+            {
+                StateName = "Virginia",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Washington"] = new StateIndustryStructure
+            {
+                StateName = "Washington",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC",
+                                "Private Households"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["WestVirginia"] = new StateIndustryStructure
+            {
+                StateName = "West Virginia",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Wisconsin"] = new StateIndustryStructure
+            {
+                StateName = "Wisconsin",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            },
+            ["Wyoming"] = new StateIndustryStructure
+            {
+                StateName = "Wyoming",
+                Industries = new List<Industry>
+                {
+                    new Industry
+                    {
+                        IndustryName = "Agriculture, Forestry, And Fishing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Construction",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Finance, Insurance, And Real Estate",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Manufacturing",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Mining",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Public Administration",
+                        SubIndustries = new List<string>
+                        {
+                            "Nonclassifiable Establishments"
+                        }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Retail Trade",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Services",
+                        SubIndustries =
+                            new List<string>
+                            {
+                                "Miscellaneous Services NEC"
+                            }
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Transportation, Communications, Electric, Gas, And Sanitary Services",
+                        SubIndustries = new List<string>()
+                    },
+                    new Industry
+                    {
+                        IndustryName = "Wholesale Trade",
+                        SubIndustries = new List<string>()
+                    }
+                }
+            }
+        };
+    }
+}
+
